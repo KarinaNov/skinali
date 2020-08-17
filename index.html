@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+	  <div class="container">
+		<div class="header__inner">
+			<a href="" class="logo">			
+			<div class="logo__img">
+				<img src="img/logo.png" alt="">
+    </div>
+  </a>
+      <div class="header__info">
+        <p class="header__phone-number"> +38 095 583 56 14</p>
+        <a class="header__phone" href="tel:80505676767">Заказать звонок</a>
+      </div>
+			</div>
+    </div>
+
+  <section class="page-section top">
+    <div class="container">
+    <div class="page-section__wrapper">
+        <div class="top__inner">
+          <div class="top__order">
+            <h1 class="top__order-title">Фартуки из закаленного стекла</h1>
+            <p class="top__order-text">Современный подход к решению интерьерных проблем</p>
+            <button class="top__order-btn popup-open">Заказать</button>
+         
+          </div>
+        <div class="top__calculate">
+          <h3 class="top__calculate-title">Расчет стоимости</h3>
+          <div class="top__calculate-container">
+            <p class="top__calculate-text">Высота панели</p>
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+            <p class="top__calculate-text">Ширина панели</p>
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+            <div class="top__calculate-check">
+              <p class="top__calculate-text">Тип стекла</p>
+              <ul class="top__calculate-list">
+                <li class="top__calculate-item">
+                  <input class="top__calculate-radio" type="radio" id="coding1" name="glass" value="codeing" >
+                  <label class="top__calculate-label" for="coding1">Обычное</label>
+                </li>
+                <li class="top__calculate-item">
+                  <input class="top__calculate-radio" type="radio" id="coding2" name="glass" value="codieng" checked>
+                  <label class="top__calculate-label" for="coding2">Осветленное</label>
+                </li>
+              </ul>
+            </div>
+            <div class="top__calculate-check">
+              <p class="top__calculate-text">Тип печати</p>
+              <ul class="top__calculate-list">
+                <li class="top__calculate-item">
+                  <input class="top__calculate-radio" type="radio" id="print1" name="print" value="codieng" >
+                  <label class="top__calculate-label" for="print1">Без печати</label>
+                </li>
+                <li class="top__calculate-item">
+                  <input class="top__calculate-radio" type="radio" id="print2" name="print" value="codieng" checked>
+                  <label class="top__calculate-label" for="print2">Уф-печать</label>
+                </li>
+              </ul>
+            </div>
+            <div class="top__calculate-check calculate-box">
+              <ul class="top__calculate-list">
+                <li class="top__calculate-item">
+                  <input class="top__calculate-radio" type="radio" id="deliv1" name="deliv" value="coding" >
+                  <label class="top__calculate-label" for="deliv1">Монтаж</label>
+                </li>
+                <li class="top__calculate-item">
+                  <input class="top__calculate-radio" type="radio" id="deliv2" name="deliv" value="coding" checked>
+                  <label class="top__calculate-label" for="deliv2" for="coding">Доставка</label>
+                </li>
+            </ul>
+          </div>
+          <div class="top__calculate-check calculate-box">
+            <ul class="top__calculate-list">
+              <li class="top__calculate-item">
+                <input class="top__calculate-radio" type="radio" id="check1" name="check" value="coding" >
+                <label class="top__calculate-label" for="check1">Замер</label>
+              </li>
+              <li class="top__calculate-item">
+                <input class="top__calculate-radio" type="radio" id="check2" name="check" value="coding" checked>
+                <label class="top__calculate-label" for="check2">Розетки</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="top__calculate-btn top__order-btn">Расчитать</button>
+      </div>
+      </div>
+      <div class="popup-fade">
+        <div class="popup">
+          <a class="popup-close" href="#"><img src="./img/close.svg" alt=""></a>
+          <h2 class="popup-title title">Заказать звонок</h2>
+          <p class="popup__text">Оставьте свои контактные данные и мы Вам перезвоним!</p>
+          <form class="popup__form">
+          <label class="popup__form-label-1">Имя</label>
+          <input class="popup__form-input"type="text">
+          <label class="popup__form-label-2">Номер телефона</label>
+          <input class="popup__form-input"type="text">  
+        </form>
+          <div class="finished-works-btn">
+            <button class="popup__form-btn top__order-btn">Жду звонка!</button>
+          </div>
+
+        </div>		
+      </div>
+    </div>
+    
+    </div>
+  </section>
+</header>
+
+<section class="description">
+  <div class="container">
+    <div class="description-wrapper">
+      <h2 class="description-title title">Что такое скинали?</h2>
+      <div class="description-info">
+        <p class="description-text">Уникальное дизайнерское решение – Скинали (кухонный фартук). 
+        Это декоративный элемент из закаленного стекла с нанесением УФ-печати, 
+        который позволяет сделать вашу кухню неповторимой за счет индивидуального 
+        дизайна, который выберете именно ВЫ. </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="finished-works">
+  <div class="finished-works__container">
+  <div class="finished-works__slider-box">
+    <h2 class="finished-works-title title">Готовые работы</h2>
+    <div class="slides-numbers" style="display: block;">
+      <span class="active">01</span> / <span class="total"></span>
+    </div>
+    <div class="finished-works__slider">
+      <div class="finished-works__slider-item">
+        <img class="finished-works__slider-img" src="img/slider-1.jpg" alt="">
+      </div>
+      <div class="finished-works__slider-item">
+        <img class="finished-works__slider-img" src="img/slider-1.jpg" alt="">
+      </div>
+      <div class="finished-works__slider-item">
+        <img class="finished-works__slider-img" src="img/slider-1.jpg" alt="">
+      </div>
+      <div class="finished-works__slider-item">
+        <img class="finished-works__slider-img" src="img/slider-1.jpg" alt="">
+      </div>
+      <div class="finished-works__slider-item">
+        <img class="finished-works__slider-img" src="img/slider-1.jpg" alt="">
+      </div>
+      <div class="finished-works__slider-item">
+        <img class="finished-works__slider-img" src="img/slider-1.jpg" alt="">
+      </div>
+    </div>
+    </div>
+    <div class="finished-works-btn">
+      <button class="top__order-btn">Расчитать</button>
+    </div>
+    </div>
+</section>
+
+<section class="why-us">
+  <div class="container">
+    <h2 class="why-us__title title">Почему именно мы?</h2>
+    <div class="why-us__items">
+      <div class="why-us__item">
+        <img class="why-us__img" src="img/item-1.svg" alt="">
+        <p class="why-us__text">Собственное производство</p>
+      </div>
+      <div class="why-us__item">
+        <img class="why-us__img" src="img/item-2.svg" alt="">
+        <p class="why-us__text">Консультация профессионалов</p>
+      </div>
+      <div class="why-us__item">
+        <img class="why-us__img" src="img/item-3.svg" alt="">
+        <p class="why-us__text">Индивидуальный подход</p>
+      </div>
+      <div class="why-us__item">
+        <img class="why-us__img" src="img/item-4.svg" alt="">
+        <p class="why-us__text">Использование высокопрочного закаленного стекла</p>
+      </div>
+    </div>
+    <div class="why-us__items">
+      <div class="why-us__item">
+        <img class="why-us__img" src="img/item-5.svg" alt="">
+        <p class="why-us__text">Доставка по всей Украине</p>
+      </div>
+      <div class="why-us__item">
+        <img class="why-us__img" src="img/item-6.svg" alt="">
+        <p class="why-us__text">Большой опыт работы</p>
+      </div>
+      <div class="why-us__item">
+        <img class="why-us__img" src="img/item-7.svg" alt="">
+        <p class="why-us__text">Профессиональная установка</p>
+      </div>
+      <div class="why-us__item">
+        <img class="why-us__img" src="img/item-8.svg" alt="">
+        <p class="why-us__text">Производство полного цикла</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-skinali">
+  <div class="why-skinali__bg">
+  <div class="container">
+    <h2 class="why-skinali__title title">Почему выбирают скинали</h2>
+    <div class="why-skinali__inner">
+      <div class="why-skinali__item">
+        <div class="why-skinali__box why-skinali__box-1 why-skinali__point">
+          <p class="why-skinali__text">Устойчивость к повышенной влажности</p>
+        </div>
+        <div class="why-skinali__box why-skinali__box-2 why-skinali__point">
+          <p class="why-skinali__text">Уникальный дизайн</p>
+        </div>
+        <div class="why-skinali__box why-skinali__box-3 why-skinali__point">
+          <p class="why-skinali__text">Простота установки</p>
+        </div>
+        <div class="why-skinali__box why-skinali__box-4 why-skinali__point">
+          <p class="why-skinali__text">Гигиеничность</p>
+          <p class="why-skinali__under-text">Стекло не поглощает запах и влагу</p>
+        </div>
+      </div>
+      <div class="why-skinali__item">
+        <div class="why-skinali__box why-skinali__box-5 why-skinali__point">
+          <p class="why-skinali__text">Прочность и безопасность</p>
+        </div>
+        <div class="why-skinali__box why-skinali__box-6 why-skinali__point">
+          <p class="why-skinali__text">Практичность в уходе</p>
+        </div>
+        <div class="why-skinali__box why-skinali__box-7 why-skinali__point">
+          <p class="why-skinali__text">Термостойкость</p>
+        </div>
+        <div class="why-skinali__box why-skinali__box-8 why-skinali__point">
+          <p class="why-skinali__text">Презентабельный вид на долгие годы</p>
+          <p class="why-skinali__under-text">Изображение не тускнеет и не выгорает</p>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+</section>
+
+<section class="popular-var">
+  <div class="container">
+    <h2 class="why-skinali__title title">Популярные варианты</h2>
+    <div class="popular-var__items">
+      <div class="popular-var__img">
+        <img src="./img/var-1.png" alt="">
+      </div>
+      <div class="popular-var__img">
+        <img src="./img/var-2.png" alt="">
+      </div>
+      <div class="popular-var__img">
+        <img src="./img/var-3.png" alt="">
+      </div>
+      <div class="popular-var__img">
+        <img src="./img/var-4.png" alt="">
+      </div>
+      <div class="popular-var__img">
+        <img src="./img/var-5.png" alt="">
+      </div>
+      <div class="popular-var__img">
+        <img src="./img/var-6.png" alt="">
+      </div>
+      <div class="popular-var__img">
+        <img src="./img/var-7.png" alt="">
+      </div>
+      <div class="popular-var__img">
+        <img src="./img/var-8.png" alt="">
+      </div>
+      <div class="popular-var__img">
+        <img src="./img/var-9.png" alt="">
+      </div>
+      </div>
+      <div class="finished-works-btn">
+        <button class="top__order-btn">Смотреть больше</button>
+      </div>
+    </div>
+</section>
+
+<section class="question">
+  <div class="container">
+    <h2 class="question__title title">Еще остались вопросы?</h2>
+      <div class="question__items">
+        <div class="question__item">
+          <h4 class="question__item-title">Что такое скинали?</h4>
+          <p class="question__item-text">Стоимость изделий из стекла зависит от площади и толщины данного 
+            изделия, а так же выбранного вами типа стекла. К этой сумме добавить стоимость замера, 
+            доставка и установки (если требуется). Точную цену Вы можете рассчитать при помощи калькулятора.</p>
+          <img class="question__item-img" src="./img/according-question.svg" alt="">
+        </div>
+        <div class="question__item question__item--active">
+          <h4 class="question__item-title">Стоимость?</h4>
+          <p class="question__item-text">Стоимость изделий из стекла зависит от площади и толщины данного 
+            изделия, а так же выбранного вами типа стекла. К этой сумме добавить стоимость замера, 
+            доставка и установки (если требуется). Точную цену Вы можете рассчитать при помощи калькулятора.</p>
+            <img class="question__item-img" src="./img/according-question.svg" alt="">
+        </div>
+        <div class="question__item">
+          <h4 class="question__item-title">Срок изготовления?</h4>
+          <p class="question__item-text">Стоимость изделий из стекла зависит от площади и толщины данного 
+            изделия, а так же выбранного вами типа стекла. К этой сумме добавить стоимость замера, 
+            доставка и установки (если требуется). Точную цену Вы можете рассчитать при помощи калькулятора.</p>
+            <img class="question__item-img" src="./img/according-question.svg" alt="">
+        </div>
+        <div class="question__item">
+          <h4 class="question__item-title">Что такое осветленное стекло?</h4>
+          <p class="question__item-text">Стоимость изделий из стекла зависит от площади и толщины данного 
+            изделия, а так же выбранного вами типа стекла. К этой сумме добавить стоимость замера, 
+            доставка и установки (если требуется). Точную цену Вы можете рассчитать при помощи калькулятора.</p>
+            <img class="question__item-img" src="./img/according-question.svg" alt="">
+        </div>
+        <div class="question__item">
+          <h4 class="question__item-title">Когда лучше производить монтаж скинали: до установки кухни или после?</h4>
+          <p class="question__item-text">Стоимость изделий из стекла зависит от площади и толщины данного 
+            изделия, а так же выбранного вами типа стекла. К этой сумме добавить стоимость замера, 
+            доставка и установки (если требуется). Точную цену Вы можете рассчитать при помощи калькулятора.</p>
+            <img class="question__item-img" src="./img/according-question.svg" alt="">
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="map">
+    <div class="container">
+      <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164152.76882120813!2d36.145742730253595!3d49.99472774444511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1597222305120!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- <div class="map__contact">
+      <h5 class="map__contact-title">Что такое скинали?</h5>
+      <ul class="map__contact-info">
+        <li class="map__contact-item">
+          <a class="map__contact-mail" href="mailto:rudnev1995@gmail.com">rudnev1995@gmail.com</a>
+        </li>
+        <li class="map__contact-item">
+          <a class="map__contact-tel" href="tel:+380 95 583 56 14">+380 95 583 56 14</a>
+        </li>
+        <li class="map__contact-item">
+          <a class="map__contact-inst" href="#">@skinali_ha</a>
+        </li>
+        <li class="map__contact-item">
+          <a class="map__contact-point" href="#">Харьков, ул. Шевченко 327</a>
+        </li>
+      </ul>
+      <div class="finished-works-btn">
+        <button class="top__order-btn">Заказать звонок</button>
+      </div>
+    </div> -->
+  </div>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+      <div class="footer__inner">
+        <a href="" class="logo">			
+        <div class="logo__img">
+          <img src="img/logo-footer.png" alt="">
+      </div>
+      <p class="footer__phone-number">Скинали - современный подход
+        к решению интерьерных проблем</p>
+    </a>
+        <div class="footer__info">
+          <p class="footer__phone-number"> +38 095 583 56 14</p>
+          <a class="footer__phone" href="tel:80505676767">Заказать звонок</a>
+          <a class="footer__mail" href="mailto:rudnev1995@gmail.com">rudnev1995@gmail.com</a>
+        </div>
+        </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--Plugin JavaScript file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
